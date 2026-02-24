@@ -1,9 +1,9 @@
 profile EDUCA
 {
-    Description = 'Perfil para exponer el Role Center EDUCA';
-    Caption = 'Rol de EDUCA';
-    ProfileDescription = 'Perfil de usuario para el Role Center EDUCA.';
-    RoleCenter = "Role Center EDUCA";
+    Description = 'Perfil para Secretaría - Administración';
+    Caption = 'Secretaría - Administración';
+    ProfileDescription = 'Perfil de usuario para Secretaría - Administración.';
+    RoleCenter = "Rol Secretaria-Administracion";
     Enabled = true;
     Promoted = true;
 }

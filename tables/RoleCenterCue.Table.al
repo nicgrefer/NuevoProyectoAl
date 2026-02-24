@@ -24,6 +24,41 @@ table 50119 "EDUCA RC Cue"
             CalcFormula = count("Matrículas");
             Editable = false;
         }
+        field(4; "Cursos"; Integer)
+        {
+            Caption = 'Cursos';
+            FieldClass = FlowField;
+            CalcFormula = count(Cursos);
+            Editable = false;
+        }
+        field(5; "Clases"; Integer)
+        {
+            Caption = 'Clases';
+            FieldClass = FlowField;
+            CalcFormula = count(Clases);
+            Editable = false;
+        }
+        field(6; "Profesores"; Integer)
+        {
+            Caption = 'Profesores';
+            FieldClass = FlowField;
+            CalcFormula = count(Claustro);
+            Editable = false;
+        }
+        field(7; "PAS"; Integer)
+        {
+            Caption = 'PAS';
+            FieldClass = FlowField;
+            CalcFormula = count(Personal);
+            Editable = false;
+        }
+        field(8; "Departamentos"; Integer)
+        {
+            Caption = 'Departamentos';
+            FieldClass = FlowField;
+            CalcFormula = count(Departamentos);
+            Editable = false;
+        }
     }
 
     keys
