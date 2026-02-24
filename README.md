@@ -20,6 +20,64 @@ La base de datos **EDUCA** almacena información clave del centro, incluyendo cu
 
 ---
 
+## 📁 Estructura del Proyecto
+
+```
+EsteSiAl/
+├── app.json                  # Configuración de la extensión
+├── AGENTS.md                 # Guías de desarrollo
+├── README.md                 # Este archivo
+├── tables/                   # Definiciones de tablas
+│   ├── Claustro.Table.al
+│   ├── Clases.Table.al
+│   ├── Cursos.Table.al
+│   ├── Departamentos.Table.al
+│   ├── Estudiantes.Table.al
+│   ├── Matriculas.Table.al
+│   ├── Personal.Table.al
+│   └── RoleCenterCue.Table.al
+├── page/                     # Páginas de UI
+│   ├── ListPage/            # Páginas de lista
+│   │   ├── Clases.Page.al
+│   │   ├── Claustro.Page.al
+│   │   ├── Cursos.Page.al
+│   │   ├── Departamentos.Page.al
+│   │   ├── Estudiantes.Page.al
+│   │   ├── MatriculasList.Page.AL
+│   │   └── Personal.Page.al
+│   ├── CardPage/            # Páginas de ficha
+│   │   ├── FichaClase.Page.al
+│   │   ├── FichaCurso.Page.al
+│   │   ├── FichaDepartamento.Page.al
+│   │   ├── FichaEstudiante.Page.al
+│   │   ├── FichaPersonal.Page.al
+│   │   ├── FichaProfesor.Page.al
+│   │   └── MatriculasCard.Page.Al
+│   ├── ListPart/            # Partes de lista
+│   │   ├── AlumnosTutoria.ListPart.al
+│   │   └── ClasesAsociadas.ListPart.al
+│   └── RoleCenter/           # Componentes del RoleCenter
+│       ├── EDUCA_Cabecera.CardPart.al
+│       ├── EstadisticasClase.CardPart.al
+│       ├── EstadisticasProfesor.CardPart.al
+│       ├── RC_Estudiantes.ListPart.al
+│       ├── RC_PAS.ListPart.al
+│       ├── RC_Profesores.ListPart.al
+│       └── RoleCenterCues.CardPart.al
+├── enum/                     # Definiciones de enumeraciones
+│   ├── SemanaEnum.al
+│   └── SexoEnum.al
+├── codeunits/                # Codeunits de lógica
+│   └── CargaDatosIniciales.Codeunit.al
+├── RoleCenter/               # Configuración del RoleCenter
+│   ├── ProfileEDUCA.al
+│   └── RoleCenterEDUCA.al
+└── utils/                    # Utilidades y diagramas
+    └── ModeloRelacional.drawio.png
+```
+
+---
+
 ## 📋 Tablas Principales
 
 La BD consta de las siguientes **siete tablas**:
