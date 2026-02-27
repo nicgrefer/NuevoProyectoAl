@@ -4,7 +4,7 @@ page 50113 "Ficha departamento"
     ApplicationArea = All;
     UsageCategory = None;
     SourceTable = Departamentos;
-    Caption = 'Ficha departamento';
+    Caption = 'Department Card', comment = 'ESP=Ficha departamento';
 
     layout
     {
@@ -12,34 +12,34 @@ page 50113 "Ficha departamento"
         {
             group(General)
             {
-                Caption = 'General';
+                Caption = 'General', comment = 'ESP=General';
                 field("Código dept."; Rec."Código dept.")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del departamento.';
+                    ToolTip = 'Department Code', comment = 'ESP=Código del departamento';
                     Importance = Promoted;
                 }
                 field("Edificio"; Rec."Edificio")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Edificio donde se ubica.';
+                    ToolTip = 'Building', comment = 'ESP=Edificio donde se ubica';
                     Importance = Promoted;
                 }
                 field("Despacho"; Rec."Despacho")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de despacho.';
+                    ToolTip = 'Office No.', comment = 'ESP=Número de despacho';
                 }
                 field("Código director"; Rec."Código director")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del director.';
+                    ToolTip = 'Director Code', comment = 'ESP=Código del director';
                     LookupPageId = "Lista del claustro";
                 }
                 field("Promedio tarifa"; Rec."Promedio tarifa")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Promedio de tarifa de laboratorio (calculado).';
+                    ToolTip = 'Average Laboratory Fee', comment = 'ESP=Promedio de tarifa de laboratorio (calculado)';
 
                     trigger OnDrillDown()
                     var
@@ -59,11 +59,11 @@ page 50113 "Ficha departamento"
         {
             group(Navegar)
             {
-                Caption = 'Navegar';
+                Caption = 'Navigate', comment = 'ESP=Navegar';
 
                 action(Profesores)
                 {
-                    Caption = 'Profesores';
+                    Caption = 'Teachers', comment = 'ESP=Profesores';
                     ApplicationArea = All;
                     Image = List;
                     RunObject = page "Lista del claustro";
@@ -72,7 +72,7 @@ page 50113 "Ficha departamento"
 
                 action(Director)
                 {
-                    Caption = 'Director';
+                    Caption = 'Director', comment = 'ESP=Director';
                     ApplicationArea = All;
                     Image = View;
 

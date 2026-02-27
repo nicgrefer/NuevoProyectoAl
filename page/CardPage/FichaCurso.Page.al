@@ -4,7 +4,7 @@ page 50109 "Ficha curso"
     ApplicationArea = All;
     UsageCategory = None;
     SourceTable = Cursos;
-    Caption = 'Ficha curso';
+    Caption = 'Course Card', comment = 'ESP=Ficha curso';
 
     layout
     {
@@ -12,38 +12,38 @@ page 50109 "Ficha curso"
         {
             group(General)
             {
-                Caption = 'General';
+                Caption = 'General', comment = 'ESP=General';
                 field("Código curso"; Rec."Código curso")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del curso.';
+                    ToolTip = 'Course Code', comment = 'ESP=Código del curso';
                     Importance = Promoted;
                 }
                 field("Nombre curso"; Rec."Nombre curso")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Nombre del curso.';
+                    ToolTip = 'Course Name', comment = 'ESP=Nombre del curso';
                     Importance = Promoted;
                 }
                 field("Desc. curso"; Rec."Desc. curso")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Descripción del curso.';
+                    ToolTip = 'Course Description', comment = 'ESP=Descripción del curso';
                 }
                 field("Créditos"; Rec."Créditos")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Créditos del curso.';
+                    ToolTip = 'Course Credits', comment = 'ESP=Créditos del curso';
                 }
                 field("Tarifa"; Rec."Tarifa")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Tarifa de laboratorio.';
+                    ToolTip = 'Laboratory Fee', comment = 'ESP=Tarifa de laboratorio';
                 }
                 field("Código dept."; Rec."Código dept.")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del departamento.';
+                    ToolTip = 'Department Code', comment = 'ESP=Código del departamento';
                     LookupPageId = "Lista de departamentos";
                 }
             }
@@ -64,7 +64,7 @@ page 50109 "Ficha curso"
         {
             action(VerDepartamento)
             {
-                Caption = 'Departamento';
+                Caption = 'Department', comment = 'ESP=Departamento';
                 ApplicationArea = All;
                 Image = View;
                 RunObject = page "Ficha departamento";

@@ -5,7 +5,7 @@ page 50102 "Lista de estudiantes"
     UsageCategory = Lists;
     SourceTable = Estudiantes;
     CardPageId = "Ficha estudiante";
-    Caption = 'Lista de estudiantes';
+    Caption = 'Student List', comment = 'ESP=Lista de estudiantes';
 
     layout
     {
@@ -16,37 +16,37 @@ page 50102 "Lista de estudiantes"
                 field("Código estudiante"; Rec."Código estudiante")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del estudiante';
+                    ToolTip = 'Student Code', comment = 'ESP=Código del estudiante';
                 }
                 field("Nombre"; Rec."Nombre")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Nombre completo';
+                    ToolTip = 'Full Name', comment = 'ESP=Nombre completo';
                 }
                 field("Sexo"; Rec.Sexo)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Sexo del estudiante';
+                    ToolTip = 'Gender', comment = 'ESP=Sexo del estudiante';
                 }
                 field("Dirección"; Rec."Dirección")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Dirección completa';
+                    ToolTip = 'Full Address', comment = 'ESP=Dirección completa';
                 }
                 field("Teléfono"; Rec."Teléfono")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de teléfono';
+                    ToolTip = 'Phone Number', comment = 'ESP=Número de teléfono';
                 }
                 field("Fecha de nacimiento"; Rec."Fecha de nacimiento")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Fecha de nacimiento';
+                    ToolTip = 'Birth Date', comment = 'ESP=Fecha de nacimiento';
                 }
                 field("Código tutor"; Rec."Código tutor")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del profesor tutor';
+                    ToolTip = 'Tutor Code', comment = 'ESP=Código del profesor tutor';
                 }
             }
         }

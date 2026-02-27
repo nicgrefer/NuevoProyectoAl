@@ -3,7 +3,7 @@ page 50116 "Alumnos tutoría"
     PageType = ListPart;
     ApplicationArea = All;
     SourceTable = Estudiantes;
-    Caption = 'Alumnos tutoría';
+    Caption = 'Tutored Students', comment = 'ESP=Alumnos tutoría';
     Editable = false;
     InsertAllowed = false;
     ModifyAllowed = false;
@@ -18,12 +18,12 @@ page 50116 "Alumnos tutoría"
                 field("Código estudiante"; Rec."Código estudiante")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del estudiante.';
+                    ToolTip = 'Student Code', comment = 'ESP=Código del estudiante';
                 }
                 field("Nombre"; Rec."Nombre")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Nombre del estudiante.';
+                    ToolTip = 'Student Name', comment = 'ESP=Nombre del estudiante';
                 }
             }
         }
@@ -35,11 +35,11 @@ page 50116 "Alumnos tutoría"
         {
             group(Estudiante)
             {
-                Caption = 'Estudiante';
+                Caption = 'Student', comment = 'ESP=Estudiante';
 
                 action(Matriculas)
                 {
-                    Caption = 'Matrículas';
+                    Caption = 'Enrollments', comment = 'ESP=Matrículas';
                     ApplicationArea = All;
                     Image = List;
                     RunObject = page "Lista Matriculas";
@@ -47,7 +47,7 @@ page 50116 "Alumnos tutoría"
                 }
                 action(Datos)
                 {
-                    Caption = 'Datos';
+                    Caption = 'Data', comment = 'ESP=Datos';
                     ApplicationArea = All;
                     Image = View;
                     RunObject = page "Ficha estudiante";

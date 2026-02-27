@@ -1,13 +1,14 @@
 table 50102 Clases
 {
     DataClassification = ToBeClassified;
+    Caption = 'Classes', comment = 'ESP=Clases';
     DrillDownPageId = "Lista de clases";
 
     fields
     {
         field(1; "Código curso"; Code[3])
         {
-            Caption = 'Código curso';
+            Caption = 'Course Code', comment = 'ESP=Código curso';
             TableRelation = Cursos."Código curso";
             trigger OnValidate()
             begin
@@ -18,7 +19,7 @@ table 50102 Clases
         }
         field(2; "Sección"; Text[2])
         {
-            Caption = 'Nº de sección';
+            Caption = 'Section No.', comment = 'ESP=Nº de sección';
             Numeric = true;
             trigger OnValidate()
             begin
@@ -30,19 +31,19 @@ table 50102 Clases
         {
             ObsoleteState = Pending;
             ObsoleteReason = 'Reemplazado por el campo Día Option de tipo Enum SemanaEnum';
-            Caption = 'Día de la semana';
+            Caption = 'Day of Week', comment = 'ESP=Día de la semana';
         }
         field(33; "Día Option"; Enum SemanaEnum)
         {
-            Caption = 'Día de la semana';
+            Caption = 'Day of Week', comment = 'ESP=Día de la semana';
         }
         field(4; "Hora"; Time)
         {
-            Caption = 'Hora de la clase';
+            Caption = 'Class Time', comment = 'ESP=Hora de la clase';
         }
         field(5; "Edificio"; Text[2])
         {
-            Caption = 'Edificio';
+            Caption = 'Building', comment = 'ESP=Edificio';
             trigger OnValidate()
             begin
                 Rec.Edificio := UpperCase(Rec.Edificio);
@@ -50,7 +51,7 @@ table 50102 Clases
         }
         field(6; "Despacho"; Integer)
         {
-            Caption = 'Despacho';
+            Caption = 'Office', comment = 'ESP=Despacho';
             trigger OnValidate()
             begin
                 if Rec.Despacho < 0 then
@@ -59,12 +60,12 @@ table 50102 Clases
         }
         field(7; "Código profesor"; Code[2])
         {
-            Caption = 'Código profesor';
+            Caption = 'Teacher Code', comment = 'ESP=Código profesor';
             TableRelation = Claustro."Código profesor";
         }
         field(8; "Nº matrículas"; Integer)
         {
-            Caption = 'Nº matrículas';
+            Caption = 'No. Enrollments', comment = 'ESP=Nº matrículas';
             FieldClass = FlowField;
             CalcFormula = count("Matrículas" where("Código curso" = field("Código curso"), "Sección" = field("Sección")));
             Editable = false;

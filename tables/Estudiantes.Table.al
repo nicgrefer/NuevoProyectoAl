@@ -1,13 +1,13 @@
 table 50103 Estudiantes
 {
     DataClassification = ToBeClassified;
-    Caption = 'Estudiantes';
+    Caption = 'Students', comment = 'ESP=Estudiantes';
 
     fields
     {
         field(1; "Código estudiante"; Code[3])
         {
-            Caption = 'Código estudiante';
+            Caption = 'Student Code', comment = 'ESP=Código estudiante';
             Numeric = true;
             trigger OnValidate()
             begin
@@ -17,7 +17,7 @@ table 50103 Estudiantes
         }
         field(2; "Nombre"; Text[30])
         {
-            Caption = 'Nombre';
+            Caption = 'Name', comment = 'ESP=Nombre';
             trigger OnValidate()
             begin
                 if Rec.Nombre = '' then
@@ -26,24 +26,24 @@ table 50103 Estudiantes
         }
         field(3; "Sexo"; Enum SexoEnum)
         {
-            Caption = 'Sexo';
+            Caption = 'Gender', comment = 'ESP=Sexo';
         }
         field(4; "Dirección"; Text[50])
         {
-            Caption = 'Dirección';
+            Caption = 'Address', comment = 'ESP=Dirección';
         }
         field(5; "Teléfono"; Text[9])
         {
-            Caption = 'Teléfono';
+            Caption = 'Phone', comment = 'ESP=Teléfono';
             Numeric = true;
         }
         field(6; "Fecha de nacimiento"; Date)
         {
-            Caption = 'Fecha de nacimiento';
+            Caption = 'Birth Date', comment = 'ESP=Fecha de nacimiento';
         }
         field(7; "Código tutor"; Code[2])
         {
-            Caption = 'Código tutor';
+            Caption = 'Tutor Code', comment = 'ESP=Código tutor';
             TableRelation = Claustro."Código profesor";
         }
     }

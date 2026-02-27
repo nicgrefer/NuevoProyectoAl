@@ -5,7 +5,7 @@ page 50107 "Lista de departamentos"
     UsageCategory = Lists;
     SourceTable = Departamentos;
     CardPageId = "Ficha departamento";
-    Caption = 'Lista de departamentos';
+    Caption = 'Department List', comment = 'ESP=Lista de departamentos';
 
     layout
     {
@@ -16,27 +16,27 @@ page 50107 "Lista de departamentos"
                 field("Código dept."; Rec."Código dept.")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del departamento';
+                    ToolTip = 'Department Code', comment = 'ESP=Código del departamento';
                 }
                 field("Edificio"; Rec."Edificio")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Edificio donde se ubica';
+                    ToolTip = 'Building', comment = 'ESP=Edificio donde se ubica';
                 }
                 field("Despacho"; Rec."Despacho")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de despacho';
+                    ToolTip = 'Office No.', comment = 'ESP=Número de despacho';
                 }
                 field("Código director"; Rec."Código director")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del profesor director';
+                    ToolTip = 'Director Code', comment = 'ESP=Código del profesor director';
                 }
                 field("Promedio tarifa"; Rec."Promedio tarifa")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Promedio de tarifa de laboratorio (calculado)';
+                    ToolTip = 'Average Laboratory Fee', comment = 'ESP=Promedio de tarifa de laboratorio (calculado)';
                 }
             }
         }
@@ -48,7 +48,7 @@ page 50107 "Lista de departamentos"
         {
             action(CalcularPromedio)
             {
-                Caption = 'Calcular promedio tarifa';
+                Caption = 'Calculate Average Fee', comment = 'ESP=Calcular promedio tarifa';
                 ApplicationArea = All;
                 Image = Calculate;
 

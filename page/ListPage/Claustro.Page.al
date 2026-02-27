@@ -5,7 +5,7 @@ page 50105 "Lista del claustro"
     UsageCategory = Lists;
     SourceTable = Claustro;
     CardPageId = "Ficha profesor";
-    Caption = 'Lista del claustro';
+    Caption = 'Faculty List', comment = 'ESP=Lista del claustro';
 
     layout
     {
@@ -16,42 +16,42 @@ page 50105 "Lista del claustro"
                 field("Código profesor"; Rec."Código profesor")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del profesor';
+                    ToolTip = 'Teacher Code', comment = 'ESP=Código del profesor';
                 }
                 field("Nombre"; Rec.Nombre)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Nombre completo';
+                    ToolTip = 'Full Name', comment = 'ESP=Nombre completo';
                 }
                 field("Dirección"; Rec."Dirección")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Dirección completa';
+                    ToolTip = 'Full Address', comment = 'ESP=Dirección completa';
                 }
                 field("Fecha contrato"; Rec."Fecha contrato")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Fecha de contratación';
+                    ToolTip = 'Contract Date', comment = 'ESP=Fecha de contratación';
                 }
                 field("Num ayudantes"; Rec."Num ayudantes")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de ayudantes (calculado)';
+                    ToolTip = 'No. Assistants (calculated)', comment = 'ESP=Número de ayudantes (calculado)';
                 }
                 field("Sueldo"; Rec.Sueldo)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Sueldo del profesor';
+                    ToolTip = 'Teacher Salary', comment = 'ESP=Sueldo del profesor';
                 }
                 field("Código dept."; Rec."Código dept.")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del departamento';
+                    ToolTip = 'Department Code', comment = 'ESP=Código del departamento';
                 }
                 field("Nº clases"; Rec."Nº clases")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de clases (calculado)';
+                    ToolTip = 'No. Classes (calculated)', comment = 'ESP=Número de clases (calculado)';
                 }
             }
         }
@@ -70,7 +70,7 @@ page 50105 "Lista del claustro"
         {
             action(CalcularCampos)
             {
-                Caption = 'Calcular campos';
+                Caption = 'Calculate Fields', comment = 'ESP=Calcular campos';
                 ApplicationArea = All;
                 Image = CalculateLines;
 

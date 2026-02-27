@@ -4,30 +4,30 @@ enum 50101 SemanaEnum
 
     value(0; Lunes)
     {
-        Caption = 'Lunes';
+        Caption = 'Monday', comment = 'ESP=Lunes';
     }
     value(1; Martes)
     {
-        Caption = 'Martes';
+        Caption = 'Tuesday', comment = 'ESP=Martes';
     }
     value(2; Miércoles)
     {
-        Caption = 'Miércoles';
+        Caption = 'Wednesday', comment = 'ESP=Miércoles';
     }
     value(3; Jueves)
     {
-        Caption = 'Jueves';
+        Caption = 'Thursday', comment = 'ESP=Jueves';
     }
     value(4; Viernes)
     {
-        Caption = 'Viernes';
+        Caption = 'Friday', comment = 'ESP=Viernes';
     }
     value(5; Sábado)
     {
-        Caption = 'Sábado';
+        Caption = 'Saturday', comment = 'ESP=Sábado';
     }
     value(6; Domingo)
     {
-        Caption = 'Domingo';
+        Caption = 'Sunday', comment = 'ESP=Domingo';
     }
 }

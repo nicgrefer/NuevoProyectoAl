@@ -5,7 +5,7 @@ page 50106 "Lista de clases"
     UsageCategory = Lists;
     SourceTable = Clases;
     CardPageId = "Ficha clase";
-    Caption = 'Lista de clases';
+    Caption = 'Class List', comment = 'ESP=Lista de clases';
 
     layout
     {
@@ -16,37 +16,37 @@ page 50106 "Lista de clases"
                 field("Código curso"; Rec."Código curso")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del curso';
+                    ToolTip = 'Course Code', comment = 'ESP=Código del curso';
                 }
                 field("Sección"; Rec."Sección")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de sección';
+                    ToolTip = 'Section No.', comment = 'ESP=Número de sección';
                 }
                 field("Día"; Rec."Día Option")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Día de la semana';
+                    ToolTip = 'Day of Week', comment = 'ESP=Día de la semana';
                 }
                 field("Hora"; Rec."Hora")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Hora de la clase';
+                    ToolTip = 'Class Time', comment = 'ESP=Hora de la clase';
                 }
                 field("Edificio"; Rec."Edificio")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Edificio donde se imparte';
+                    ToolTip = 'Building', comment = 'ESP=Edificio donde se imparte';
                 }
                 field("Despacho"; Rec."Despacho")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de despacho';
+                    ToolTip = 'Office No.', comment = 'ESP=Número de despacho';
                 }
                 field("Código profesor"; Rec."Código profesor")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del profesor';
+                    ToolTip = 'Teacher Code', comment = 'ESP=Código del profesor';
                 }
             }
         }

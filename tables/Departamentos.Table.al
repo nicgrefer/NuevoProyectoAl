@@ -1,13 +1,13 @@
 table 50101 Departamentos
 {
     DataClassification = ToBeClassified;
-    Caption = 'Departamentos';
+    Caption = 'Departments', comment = 'ESP=Departamentos';
 
     fields
     {
         field(1; "Código dept."; Code[4])
         {
-            Caption = 'Código departamento';
+            Caption = 'Department Code', comment = 'ESP=Código departamento';
             trigger OnValidate()
             begin
                 if "Código dept." = '' then
@@ -17,7 +17,7 @@ table 50101 Departamentos
         }
         field(2; "Edificio"; Text[2])
         {
-            Caption = 'Edificio';
+            Caption = 'Building', comment = 'ESP=Edificio';
             trigger OnValidate()
             begin
                 Rec.Edificio := UpperCase(Rec.Edificio);
@@ -25,7 +25,7 @@ table 50101 Departamentos
         }
         field(3; "Despacho"; Integer)
         {
-            Caption = 'Despacho';
+            Caption = 'Office', comment = 'ESP=Despacho';
             InitValue = 0;
             trigger OnValidate()
             begin
@@ -35,12 +35,12 @@ table 50101 Departamentos
         }
         field(4; "Código director"; Code[2])
         {
-            Caption = 'Código director';
+            Caption = 'Director Code', comment = 'ESP=Código director';
             TableRelation = Claustro."Código profesor";
         }
         field(5; "Promedio tarifa"; Decimal)
         {
-            Caption = 'Promedio tarifa laboratorio';
+            Caption = 'Average Laboratory Fee', comment = 'ESP=Promedio tarifa laboratorio';
             FieldClass = FlowField;
             CalcFormula = average(Cursos.Tarifa where("Código dept." = field("Código dept.")));
             DecimalPlaces = 2;

@@ -4,7 +4,7 @@ page 50111 "Ficha estudiante"
     ApplicationArea = All;
     UsageCategory = None;
     SourceTable = Estudiantes;
-    Caption = 'Ficha estudiante';
+    Caption = 'Student Card', comment = 'ESP=Ficha estudiante';
 
     layout
     {
@@ -12,51 +12,51 @@ page 50111 "Ficha estudiante"
         {
             group(General)
             {
-                Caption = 'General';
+                Caption = 'General', comment = 'ESP=General';
                 field("Código estudiante"; Rec."Código estudiante")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del estudiante.';
+                    ToolTip = 'Student Code', comment = 'ESP=Código del estudiante';
                     Importance = Promoted;
                 }
                 field("Nombre"; Rec."Nombre")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Nombre completo.';
+                    ToolTip = 'Full Name', comment = 'ESP=Nombre completo';
                     Importance = Promoted;
                 }
                 field("Sexo"; Rec.Sexo)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Sexo del estudiante.';
+                    ToolTip = 'Gender', comment = 'ESP=Sexo del estudiante';
                 }
                 field("Fecha de nacimiento"; Rec."Fecha de nacimiento")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Fecha de nacimiento.';
+                    ToolTip = 'Birth Date', comment = 'ESP=Fecha de nacimiento';
                 }
             }
             group(Comunicacion)
             {
-                Caption = 'Comunicación';
+                Caption = 'Communication', comment = 'ESP=Comunicación';
                 field("Dirección"; Rec."Dirección")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Dirección completa.';
+                    ToolTip = 'Full Address', comment = 'ESP=Dirección completa';
                 }
                 field("Teléfono"; Rec."Teléfono")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de teléfono.';
+                    ToolTip = 'Phone Number', comment = 'ESP=Número de teléfono';
                 }
             }
             group(Tutoria)
             {
-                Caption = 'Tutoría';
+                Caption = 'Tutoring', comment = 'ESP=Tutoría';
                 field("Tutor"; Rec."Código tutor")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del profesor tutor.';
+                    ToolTip = 'Tutor Code', comment = 'ESP=Código del profesor tutor';
                     LookupPageId = "Lista del claustro";
                 }
             }
@@ -69,7 +69,7 @@ page 50111 "Ficha estudiante"
         {
             action(NuevaMatricula)
             {
-                Caption = 'Nueva matrícula';
+                Caption = 'New Enrollment', comment = 'ESP=Nueva matrícula';
                 ApplicationArea = All;
                 Image = New;
                 Promoted = true;
@@ -91,7 +91,7 @@ page 50111 "Ficha estudiante"
         {
             action(VerTutor)
             {
-                Caption = 'Tutor';
+                Caption = 'Tutor', comment = 'ESP=Tutor';
                 ApplicationArea = All;
                 Image = User;
 
@@ -115,7 +115,7 @@ page 50111 "Ficha estudiante"
 
             action(VerMatriculas)
             {
-                Caption = 'Matrículas';
+                Caption = 'Enrollments', comment = 'ESP=Matrículas';
                 ApplicationArea = All;
                 Image = List;
                 RunObject = page "Lista Matriculas";

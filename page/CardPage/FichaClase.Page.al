@@ -4,7 +4,7 @@ page 50110 "Ficha clase"
     ApplicationArea = All;
     UsageCategory = None;
     SourceTable = Clases;
-    Caption = 'Ficha clase';
+    Caption = 'Class Card', comment = 'ESP=Ficha clase';
 
     layout
     {
@@ -12,52 +12,52 @@ page 50110 "Ficha clase"
         {
             group(General)
             {
-                Caption = 'General';
+                Caption = 'General', comment = 'ESP=General';
                 field("Código curso"; Rec."Código curso")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del curso.';
+                    ToolTip = 'Course Code', comment = 'ESP=Código del curso';
                     Importance = Promoted;
                     LookupPageId = "Lista de cursos";
                 }
                 field("Sección"; Rec."Sección")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Sección de la clase.';
+                    ToolTip = 'Class Section', comment = 'ESP=Sección de la clase';
                     Importance = Promoted;
                 }
                 field("Día"; Rec."Día Option")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Día de la semana.';
+                    ToolTip = 'Day of Week', comment = 'ESP=Día de la semana';
                 }
                 field("Hora"; Rec."Hora")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Hora de la clase.';
+                    ToolTip = 'Class Time', comment = 'ESP=Hora de la clase';
                 }
             }
             group(Localizacion)
             {
-                Caption = 'Localización';
+                Caption = 'Location', comment = 'ESP=Localización';
                 field("Edificio"; Rec."Edificio")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Edificio donde se imparte.';
+                    ToolTip = 'Building', comment = 'ESP=Edificio donde se imparte';
                 }
                 field("Despacho"; Rec."Despacho")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de despacho.';
+                    ToolTip = 'Office No.', comment = 'ESP=Número de despacho';
                 }
             }
             group(Profesores)
             {
-                Caption = 'Profesores';
+                Caption = 'Teachers', comment = 'ESP=Profesores';
                 field("Profesor"; Rec."Código profesor")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del profesor.';
+                    ToolTip = 'Teacher Code', comment = 'ESP=Código del profesor';
                     LookupPageId = "Lista del claustro";
                 }
             }

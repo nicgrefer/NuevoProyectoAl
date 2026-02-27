@@ -3,7 +3,7 @@ page 50117 "Estadísticas profesor"
     PageType = CardPart;
     ApplicationArea = All;
     SourceTable = Claustro;
-    Caption = 'Estadísticas';
+    Caption = 'Statistics', comment = 'ESP=Estadísticas';
 
     layout
     {
@@ -11,11 +11,11 @@ page 50117 "Estadísticas profesor"
         {
             group(General)
             {
-                Caption = 'Estadísticas';
+                Caption = 'Statistics', comment = 'ESP=Estadísticas';
                 field("Nº ayudantes"; Rec."Num ayudantes")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de ayudantes del profesor.';
+                    ToolTip = 'No. Assistants', comment = 'ESP=Número de ayudantes del profesor';
 
                     trigger OnDrillDown()
                     var
@@ -29,7 +29,7 @@ page 50117 "Estadísticas profesor"
                 field("Nº clases"; Rec."Nº clases")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de clases que imparte.';
+                    ToolTip = 'No. Classes Taught', comment = 'ESP=Número de clases que imparte';
 
                     trigger OnDrillDown()
                     var

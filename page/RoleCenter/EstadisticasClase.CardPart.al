@@ -3,7 +3,7 @@ page 50115 "Estadísticas clase"
     PageType = CardPart;
     ApplicationArea = All;
     SourceTable = Clases;
-    Caption = 'Estadísticas';
+    Caption = 'Statistics', comment = 'ESP=Estadísticas';
 
     layout
     {
@@ -11,11 +11,11 @@ page 50115 "Estadísticas clase"
         {
             group(General)
             {
-                Caption = 'Estadísticas';
+                Caption = 'Statistics', comment = 'ESP=Estadísticas';
                 field("Nº matrículas"; Rec."Nº matrículas")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de matrículas de la clase.';
+                    ToolTip = 'No. Enrollments', comment = 'ESP=Número de matrículas de la clase';
 
                     trigger OnDrillDown()
                     var

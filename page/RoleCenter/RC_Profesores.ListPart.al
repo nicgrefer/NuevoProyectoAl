@@ -3,7 +3,7 @@ page 50127 "RC Profesores"
     PageType = ListPart;
     ApplicationArea = All;
     SourceTable = Claustro;
-    Caption = 'Profesores';
+    Caption = 'Teachers', comment = 'ESP=Profesores';
     Editable = false;
     InsertAllowed = false;
     ModifyAllowed = false;
@@ -18,22 +18,22 @@ page 50127 "RC Profesores"
                 field("Código profesor"; Rec."Código profesor")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del profesor.';
+                    ToolTip = 'Teacher Code', comment = 'ESP=Código del profesor';
                 }
                 field("Nombre"; Rec.Nombre)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Nombre del profesor.';
+                    ToolTip = 'Teacher Name', comment = 'ESP=Nombre del profesor';
                 }
                 field("Fecha contrato"; Rec."Fecha contrato")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Fecha de contratación.';
+                    ToolTip = 'Contract Date', comment = 'ESP=Fecha de contratación';
                 }
                 field("Código dept."; Rec."Código dept.")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Departamento.';
+                    ToolTip = 'Department', comment = 'ESP=Departamento';
                 }
             }
         }

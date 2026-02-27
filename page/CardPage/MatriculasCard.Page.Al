@@ -4,6 +4,7 @@ page 50104 "Ficha Matriculas"
     ApplicationArea = All;
     UsageCategory = None;
     SourceTable = "Matrículas";
+    Caption = 'Enrollment Card', comment = 'ESP=Ficha de matrícula';
 
     layout
     {
@@ -11,43 +12,43 @@ page 50104 "Ficha Matriculas"
         {
             group(General)
             {
-                Caption = 'General';
+                Caption = 'General', comment = 'ESP=General';
                 field("Código curso"; Rec."Código curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Código curso';
-                    ToolTip = 'Código del curso.';
+                    Caption = 'Course Code', comment = 'ESP=Código curso';
+                    ToolTip = 'Course Code', comment = 'ESP=Código del curso';
                     Importance = Promoted;
                     LookupPageId = "Lista de cursos";
                 }
                 field("Sección"; Rec."Sección")
                 {
                     ApplicationArea = All;
-                    Caption = 'Nº de sección';
-                    ToolTip = 'Sección de la clase.';
+                    Caption = 'Section No.', comment = 'ESP=Nº de sección';
+                    ToolTip = 'Section No.', comment = 'ESP=Sección de la clase';
                     Importance = Promoted;
                     LookupPageId = "Lista de clases";
                 }
                 field("Código estudiante"; Rec."Código estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'Código estudiante';
-                    ToolTip = 'Código del estudiante.';
+                    Caption = 'Student Code', comment = 'ESP=Código estudiante';
+                    ToolTip = 'Student Code', comment = 'ESP=Código del estudiante';
                     Importance = Promoted;
                     LookupPageId = "Lista de estudiantes";
                 }
                 field("Fecha matricula"; Rec."Fecha matricula")
                 {
                     ApplicationArea = All;
-                    Caption = 'Fecha matricula';
-                    ToolTip = 'Fecha de la matrícula.';
+                    Caption = 'Enrollment Date', comment = 'ESP=Fecha matricula';
+                    ToolTip = 'Enrollment Date', comment = 'ESP=Fecha de la matrícula';
                     Importance = Promoted;
                 }
                 field("Hora matricula"; Rec."Hora matricula")
                 {
                     ApplicationArea = All;
-                    Caption = 'Hora matricula';
-                    ToolTip = 'Hora de la matrícula.';
+                    Caption = 'Enrollment Time', comment = 'ESP=Hora matricula';
+                    ToolTip = 'Enrollment Time', comment = 'ESP=Hora de la matrícula';
                     Importance = Promoted;
                 }
             }
@@ -64,11 +65,11 @@ page 50104 "Ficha Matriculas"
         {
             group(Informacion)
             {
-                Caption = 'Información';
+                Caption = 'Information', comment = 'ESP=Información';
 
                 action(VerCurso)
                 {
-                    Caption = 'Curso';
+                    Caption = 'Course', comment = 'ESP=Curso';
                     ApplicationArea = All;
                     Image = View;
                     RunObject = page "Ficha curso";
@@ -76,7 +77,7 @@ page 50104 "Ficha Matriculas"
                 }
                 action(VerClase)
                 {
-                    Caption = 'Clase';
+                    Caption = 'Class', comment = 'ESP=Clase';
                     ApplicationArea = All;
                     Image = View;
                     RunObject = page "Ficha clase";
@@ -86,11 +87,11 @@ page 50104 "Ficha Matriculas"
 
             group(Estudiante)
             {
-                Caption = 'Estudiante';
+                Caption = 'Student', comment = 'ESP=Estudiante';
 
                 action(VerDatosEstudiante)
                 {
-                    Caption = 'Datos';
+                    Caption = 'Data', comment = 'ESP=Datos';
                     ApplicationArea = All;
                     Image = View;
                     RunObject = page "Ficha estudiante";
@@ -98,7 +99,7 @@ page 50104 "Ficha Matriculas"
                 }
                 action(VerMatriculasEstudiante)
                 {
-                    Caption = 'Matrículas';
+                    Caption = 'Enrollments', comment = 'ESP=Matrículas';
                     ApplicationArea = All;
                     Image = List;
                     RunObject = page "Lista Matriculas";
@@ -106,7 +107,7 @@ page 50104 "Ficha Matriculas"
                 }
                 action(VerTutor)
                 {
-                    Caption = 'Tutor';
+                    Caption = 'Tutor', comment = 'ESP=Tutor';
                     ApplicationArea = All;
                     Image = User;
 

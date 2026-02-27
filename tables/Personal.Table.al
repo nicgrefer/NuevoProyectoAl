@@ -1,13 +1,13 @@
 table 50106 Personal
 {
     DataClassification = ToBeClassified;
-    Caption = 'Personal';
+    Caption = 'Staff', comment = 'ESP=Personal';
 
     fields
     {
         field(1; "Código personal"; Code[3])
         {
-            Caption = 'Código personal';
+            Caption = 'Staff Code', comment = 'ESP=Código personal';
             Numeric = true;
             trigger OnValidate()
             begin
@@ -17,7 +17,7 @@ table 50106 Personal
         }
         field(2; Nombre; Text[30])
         {
-            Caption = 'Nombre';
+            Caption = 'Name', comment = 'ESP=Nombre';
             trigger OnValidate()
             begin
                 if Nombre = '' then
@@ -26,11 +26,11 @@ table 50106 Personal
         }
         field(3; Cargo; Text[20])
         {
-            Caption = 'Cargo';
+            Caption = 'Position', comment = 'ESP=Cargo';
         }
         field(4; Sueldo; Decimal)
         {
-            Caption = 'Sueldo';
+            Caption = 'Salary', comment = 'ESP=Sueldo';
             DecimalPlaces = 2;
             MinValue = 0;
             trigger OnValidate()
@@ -41,7 +41,7 @@ table 50106 Personal
         }
         field(5; "Código profesor"; Code[2])
         {
-            Caption = 'Código profesor (si es ayudante)';
+            Caption = 'Teacher Code (if assistant)', comment = 'ESP=Código profesor (si es ayudante)';
             TableRelation = Claustro."Código profesor";
         }
     }

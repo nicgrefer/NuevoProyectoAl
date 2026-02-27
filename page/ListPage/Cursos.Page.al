@@ -5,7 +5,7 @@ page 50100 "Lista de cursos"
     UsageCategory = Lists;
     SourceTable = Cursos;
     CardPageId = "Ficha curso";
-    Caption = 'Lista de cursos';
+    Caption = 'Course List', comment = 'ESP=Lista de cursos';
 
     layout
     {
@@ -16,32 +16,32 @@ page 50100 "Lista de cursos"
                 field("Código curso"; Rec."Código curso")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del curso';
+                    ToolTip = 'Course Code', comment = 'ESP=Código del curso';
                 }
                 field("Nombre curso"; Rec."Nombre curso")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Nombre del curso';
+                    ToolTip = 'Course Name', comment = 'ESP=Nombre del curso';
                 }
                 field("Desc. curso"; Rec."Desc. curso")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Descripción del curso';
+                    ToolTip = 'Course Description', comment = 'ESP=Descripción del curso';
                 }
                 field("Créditos"; Rec."Créditos")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de créditos';
+                    ToolTip = 'Credits', comment = 'ESP=Número de créditos';
                 }
                 field("Tarifa"; Rec."Tarifa")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Tarifa de laboratorio';
+                    ToolTip = 'Laboratory Fee', comment = 'ESP=Tarifa de laboratorio';
                 }
                 field("Código dept."; Rec."Código dept.")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del departamento';
+                    ToolTip = 'Department Code', comment = 'ESP=Código del departamento';
                 }
             }
         }

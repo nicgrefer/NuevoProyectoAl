@@ -1,13 +1,13 @@
 table 50105 Claustro
 {
     DataClassification = ToBeClassified;
-    Caption = 'Claustro';
+    Caption = 'Faculty', comment = 'ESP=Claustro';
 
     fields
     {
         field(1; "Código profesor"; Code[2])
         {
-            Caption = 'Código profesor';
+            Caption = 'Teacher Code', comment = 'ESP=Código profesor';
             Numeric = true;
             trigger OnValidate()
             begin
@@ -17,7 +17,7 @@ table 50105 Claustro
         }
         field(2; Nombre; Text[30])
         {
-            Caption = 'Nombre';
+            Caption = 'Name', comment = 'ESP=Nombre';
             trigger OnValidate()
             begin
                 if Nombre = '' then
@@ -26,15 +26,15 @@ table 50105 Claustro
         }
         field(3; "Dirección"; Text[50])
         {
-            Caption = 'Dirección';
+            Caption = 'Address', comment = 'ESP=Dirección';
         }
         field(4; "Fecha contrato"; Date)
         {
-            Caption = 'Fecha de contratación';
+            Caption = 'Contract Date', comment = 'ESP=Fecha de contratación';
         }
         field(5; "Num ayudantes"; Integer)
         {
-            Caption = 'Nº de ayudantes';
+            Caption = 'No. Assistants', comment = 'ESP=Nº de ayudantes';
             InitValue = 0;
             FieldClass = FlowField;
             CalcFormula = count(Personal where("Código profesor" = field("Código profesor"), Cargo = const('Ayudante')));
@@ -42,7 +42,7 @@ table 50105 Claustro
         }
         field(6; Sueldo; Decimal)
         {
-            Caption = 'Sueldo';
+            Caption = 'Salary', comment = 'ESP=Sueldo';
             DecimalPlaces = 2;
             MinValue = 0;
             trigger OnValidate()
@@ -53,19 +53,19 @@ table 50105 Claustro
         }
         field(7; "Código dept."; Code[4])
         {
-            Caption = 'Código departamento';
+            Caption = 'Department Code', comment = 'ESP=Código departamento';
             TableRelation = Departamentos."Código dept.";
         }
         field(8; "Nº clases"; Integer)
         {
-            Caption = 'Nº de clases';
+            Caption = 'No. Classes', comment = 'ESP=Nº de clases';
             FieldClass = FlowField;
             CalcFormula = count(Clases where("Código profesor" = field("Código profesor"), "Día Option" = field("Filtro día")));
             Editable = false;
         }
         field(9; "Filtro día"; Enum SemanaEnum)
         {
-            Caption = 'Filtro día de la semana';
+            Caption = 'Day Filter', comment = 'ESP=Filtro día de la semana';
             FieldClass = FlowFilter;
         }
     }

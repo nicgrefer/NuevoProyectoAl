@@ -1,13 +1,13 @@
 table 50104 "Matrículas"
 {
     DataClassification = ToBeClassified;
-    Caption = 'Matrículas';
+    Caption = 'Enrollments', comment = 'ESP=Matrículas';
 
     fields
     {
         field(1; "Código curso"; Code[3])
         {
-            Caption = 'Código curso';
+            Caption = 'Course Code', comment = 'ESP=Código curso';
             TableRelation = Cursos."Código curso";
             trigger OnValidate()
             begin
@@ -18,7 +18,7 @@ table 50104 "Matrículas"
         }
         field(2; "Sección"; Text[2])
         {
-            Caption = 'Nº de sección';
+            Caption = 'Section No.', comment = 'ESP=Nº de sección';
             Numeric = true;
             TableRelation = Clases."Sección" where("Código curso" = field("Código curso"));
             trigger OnValidate()
@@ -29,7 +29,7 @@ table 50104 "Matrículas"
         }
         field(3; "Código estudiante"; Code[3])
         {
-            Caption = 'Código estudiante';
+            Caption = 'Student Code', comment = 'ESP=Código estudiante';
             Numeric = true;
             TableRelation = Estudiantes."Código estudiante";
             trigger OnValidate()
@@ -40,11 +40,11 @@ table 50104 "Matrículas"
         }
         field(4; "Fecha matricula"; Date)
         {
-            Caption = 'Fecha de matriculación';
+            Caption = 'Enrollment Date', comment = 'ESP=Fecha de matriculación';
         }
         field(5; "Hora matricula"; Time)
         {
-            Caption = 'Hora de matriculación';
+            Caption = 'Enrollment Time', comment = 'ESP=Hora de matriculación';
         }
     }
 

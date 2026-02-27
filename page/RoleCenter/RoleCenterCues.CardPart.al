@@ -3,7 +3,7 @@ page 50120 "EDUCA RC Cues"
     PageType = CardPart;
     ApplicationArea = All;
     SourceTable = "EDUCA RC Cue";
-    Caption = 'Información';
+    Caption = 'Information', comment = 'ESP=Información';
 
     layout
     {
@@ -16,43 +16,43 @@ page 50120 "EDUCA RC Cues"
                 field(Estudiantes; Rec."Estudiantes")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de estudiantes.';
+                    ToolTip = 'No. Students', comment = 'ESP=Número de estudiantes';
                     DrillDownPageId = "Lista de estudiantes";
                 }
                 field(Matriculas; Rec."Matrículas")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de matrículas.';
+                    ToolTip = 'No. Enrollments', comment = 'ESP=Número de matrículas';
                     DrillDownPageId = "Lista Matriculas";
                 }
                 field(Cursos; Rec."Cursos")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de cursos.';
+                    ToolTip = 'No. Courses', comment = 'ESP=Número de cursos';
                     DrillDownPageId = "Lista de cursos";
                 }
                 field(Clases; Rec."Clases")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de clases.';
+                    ToolTip = 'No. Classes', comment = 'ESP=Número de clases';
                     DrillDownPageId = "Lista de clases";
                 }
                 field(Profesores; Rec."Profesores")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de profesores.';
+                    ToolTip = 'No. Teachers', comment = 'ESP=Número de profesores';
                     DrillDownPageId = "Lista del claustro";
                 }
                 field(PAS; Rec."PAS")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de personal.';
+                    ToolTip = 'No. Staff', comment = 'ESP=Número de personal';
                     DrillDownPageId = "Lista de personal";
                 }
                 field(Departamentos; Rec."Departamentos")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Número de departamentos.';
+                    ToolTip = 'No. Departments', comment = 'ESP=Número de departamentos';
                     DrillDownPageId = "Lista de departamentos";
                 }
             }
@@ -65,11 +65,11 @@ page 50120 "EDUCA RC Cues"
         {
             group(Nuevo)
             {
-                Caption = 'Nuevo';
+                Caption = 'New', comment = 'ESP=Nuevo';
 
                 action(NuevoEstudiante)
                 {
-                    Caption = 'Nuevo estudiante';
+                    Caption = 'New Student', comment = 'ESP=Nuevo estudiante';
                     ApplicationArea = All;
                     Image = New;
                     RunObject = page "Ficha estudiante";
@@ -77,7 +77,7 @@ page 50120 "EDUCA RC Cues"
                 }
                 action(NuevaMatricula)
                 {
-                    Caption = 'Nueva matrícula';
+                    Caption = 'New Enrollment', comment = 'ESP=Nueva matrícula';
                     ApplicationArea = All;
                     Image = New;
                     RunObject = page "Ficha Matriculas";

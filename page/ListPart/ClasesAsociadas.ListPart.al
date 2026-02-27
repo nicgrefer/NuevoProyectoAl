@@ -3,7 +3,7 @@ page 50114 "Clases asociadas"
     PageType = ListPart;
     ApplicationArea = All;
     SourceTable = Clases;
-    Caption = 'Clases asociadas';
+    Caption = 'Associated Classes', comment = 'ESP=Clases asociadas';
 
     layout
     {
@@ -14,17 +14,17 @@ page 50114 "Clases asociadas"
                 field("Día"; Rec."Día Option")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Día de la semana.';
+                    ToolTip = 'Day of Week', comment = 'ESP=Día de la semana';
                 }
                 field("Hora"; Rec."Hora")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Hora de la clase.';
+                    ToolTip = 'Class Time', comment = 'ESP=Hora de la clase';
                 }
                 field("Profesor"; Rec."Código profesor")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del profesor.';
+                    ToolTip = 'Teacher Code', comment = 'ESP=Código del profesor';
                 }
             }
         }

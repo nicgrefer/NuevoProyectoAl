@@ -4,14 +4,14 @@ enum 50100 SexoEnum
 
     value(0; Blanco)
     {
-        Caption = ' ';
+        Caption = ' ', comment = 'ESP= ';
     }
     value(1; Masculino)
     {
-        Caption = 'Masculino';
+        Caption = 'Male', comment = 'ESP=Masculino';
     }
     value(2; Femenino)
     {
-        Caption = 'Femenino';
+        Caption = 'Female', comment = 'ESP=Femenino';
     }
 }

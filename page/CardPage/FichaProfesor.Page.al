@@ -4,7 +4,7 @@ page 50112 "Ficha profesor"
     ApplicationArea = All;
     UsageCategory = None;
     SourceTable = Claustro;
-    Caption = 'Ficha profesor';
+    Caption = 'Teacher Card', comment = 'ESP=Ficha profesor';
 
     layout
     {
@@ -12,53 +12,53 @@ page 50112 "Ficha profesor"
         {
             group(General)
             {
-                Caption = 'General';
+                Caption = 'General', comment = 'ESP=General';
                 field("Código profesor"; Rec."Código profesor")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del profesor.';
+                    ToolTip = 'Teacher Code', comment = 'ESP=Código del profesor';
                     Importance = Promoted;
                 }
                 field("Nombre"; Rec.Nombre)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Nombre completo.';
+                    ToolTip = 'Full Name', comment = 'ESP=Nombre completo';
                     Importance = Promoted;
                 }
                 field("Dirección"; Rec."Dirección")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Dirección completa.';
+                    ToolTip = 'Full Address', comment = 'ESP=Dirección completa';
                 }
                 field("Código dept."; Rec."Código dept.")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Código del departamento.';
+                    ToolTip = 'Department Code', comment = 'ESP=Código del departamento';
                     LookupPageId = "Lista de departamentos";
                 }
             }
             group(Laboral)
             {
-                Caption = 'Laboral';
+                Caption = 'Work', comment = 'ESP=Laboral';
                 field("Fecha contrato"; Rec."Fecha contrato")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Fecha de contratación.';
+                    ToolTip = 'Contract Date', comment = 'ESP=Fecha de contratación';
                 }
                 field("Sueldo"; Rec.Sueldo)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Sueldo del profesor.';
+                    ToolTip = 'Teacher Salary', comment = 'ESP=Sueldo del profesor';
                 }
                 field("Filtro día"; Rec."Filtro día")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Filtro para el cálculo de clases por día.';
+                    ToolTip = 'Day Filter', comment = 'ESP=Filtro para el cálculo de clases por día';
                 }
             }
             group(AlumnosTutoria)
             {
-                Caption = 'Alumnos tutoría';
+                Caption = 'Tutored Students', comment = 'ESP=Alumnos tutoría';
                 part(AlumnosTutoriaPart; "Alumnos tutoría")
                 {
                     ApplicationArea = All;
@@ -82,7 +82,7 @@ page 50112 "Ficha profesor"
         {
             action(NuevoAlumno)
             {
-                Caption = 'Nuevo alumno';
+                Caption = 'New Student', comment = 'ESP=Nuevo alumno';
                 ApplicationArea = All;
                 Image = New;
                 Promoted = true;
@@ -104,7 +104,7 @@ page 50112 "Ficha profesor"
         {
             action(VerDepartamento)
             {
-                Caption = 'Departamento';
+                Caption = 'Department', comment = 'ESP=Departamento';
                 ApplicationArea = All;
                 Image = View;
                 RunObject = page "Ficha departamento";

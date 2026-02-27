@@ -1,14 +1,14 @@
 table 50100 Cursos
 {
     DataClassification = ToBeClassified;
-    Caption = 'Cursos';
+    Caption = 'Courses', comment = 'ESP=Cursos';
     DataCaptionFields = "Código curso", "Nombre curso";
 
     fields
     {
         field(1; "Código curso"; Code[3])
         {
-            Caption = 'Código curso';
+            Caption = 'Course Code', comment = 'ESP=Código curso';
             trigger OnValidate()
             begin
                 if "Código curso" = '' then
@@ -18,7 +18,7 @@ table 50100 Cursos
         }
         field(2; "Nombre curso"; Text[30])
         {
-            Caption = 'Nombre del curso';
+            Caption = 'Course Name', comment = 'ESP=Nombre del curso';
             trigger OnValidate()
             begin
                 if "Nombre curso" = '' then
@@ -27,21 +27,21 @@ table 50100 Cursos
         }
         field(3; "Desc. curso"; Text[30])
         {
-            Caption = 'Descripción del curso';
+            Caption = 'Course Description', comment = 'ESP=Descripción del curso';
         }
         field(4; "Créditos"; Integer)
         {
-            Caption = 'Créditos';
+            Caption = 'Credits', comment = 'ESP=Créditos';
             InitValue = 0;
         }
         field(5; "Tarifa"; Decimal)
         {
-            Caption = 'Tarifa laboratorio';
+            Caption = 'Laboratory Fee', comment = 'ESP=Tarifa laboratorio';
             DecimalPlaces = 2;
         }
         field(6; "Código dept."; Code[4])
         {
-            Caption = 'Código departamento';
+            Caption = 'Department Code', comment = 'ESP=Código departamento';
             TableRelation = Departamentos."Código dept.";
         }
     }
